@@ -1,3 +1,9 @@
+monkeyfrontik (0.2.0~dev) unstable; urgency=low
+
+  * new dev iter
+
+ -- Pavel Trukhanov <p.trukhanov@hh.ru>  Tue, 30 Aug 2011 20:03:59 +0400
+
 monkeyfrontik (0.1.0) unstable; urgency=low
 
   * Initial release.
