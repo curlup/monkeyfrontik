@@ -1,0 +1,4 @@
+debian/monkeyfrontik*
+debian/python-module-stampdir/
+monkeyfrontik.egg-info/
+build/

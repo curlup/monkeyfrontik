@@ -9,9 +9,10 @@ import logging
 import copy
 import time
 
-class DebugPageHandler(frontik.handler_xml_debug.DebugPageHandler):
+old_DebugPageHandler = frontik.handler_xml_debug.DebugPageHandler
+class DebugPageHandler(old_DebugPageHandler):
     def handle(self, record):
-        super(DebugPageHandler, self).handle(record)
+        old_DebugPageHandler.handle(self, record)
         if getattr(record, "xsltprofile", None):
             self.log_data[-1].append(record.xsltprofile)
 
