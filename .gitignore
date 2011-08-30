@@ -1,4 +1,5 @@
 debian/monkeyfrontik*
 debian/python-module-stampdir/
+debian/files
 monkeyfrontik.egg-info/
 build/
