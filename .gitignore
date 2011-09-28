@@ -3,3 +3,5 @@ debian/python-module-stampdir/
 debian/files
 monkeyfrontik.egg-info/
 build/
+**.pyc
+monkey_dev.cfg

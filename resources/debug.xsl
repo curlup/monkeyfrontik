@@ -36,10 +36,19 @@
                     status:
                     <xsl:value-of select="@code"/>
                 </div>
+                <xsl:apply-templates select="entry[stattracelink]"/>
                 <xsl:apply-templates select="entry[profile]"/>
                 <xsl:apply-templates select="entry[not(profile)]"/>
             </body>
         </html>
+    </xsl:template>
+
+    <xsl:template match="entry[stattracelink]">
+        <div class="textentry m-textentry_title">
+            Trace link: <a class="servicelink" href="{stattracelink}" target="_blank">
+                <xsl:value-of select="stattracelink"/>
+            </a>
+        </div>
     </xsl:template>
 
     <xsl:template match="entry[profile]">

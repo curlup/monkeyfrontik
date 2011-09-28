@@ -3,4 +3,4 @@
 from monkeyfrontik.server import main
 
 if __name__ == "__main__":
-    main()
+    main('monkey_dev.cfg')
