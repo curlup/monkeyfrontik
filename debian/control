@@ -13,7 +13,9 @@ Package: monkeyfrontik
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, 
   frontik (>= 2.9.0),
+  gae-hh-fork (>= 0.2.0),
   python-tornado (>= 1.2.1~hh1),
+  python-memcache,
   python-tornado-util (>= 0.3),
   python, 
 Description: monkeyfrontik - monkey patched frontik runner for some profiling

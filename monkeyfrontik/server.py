@@ -15,11 +15,7 @@ def patch_app():
         app = old_get_app(app_urls, app_dict)
         urlspec = appstat_config.get_urlspec('/appstats/.*')
         app.handlers[0][1].insert(0, urlspec)
-        def pr(x):
-            p, ll = x
-            for l in ll:
-                print l
-        map(pr, app.handlers)
+
         return app
 
     frontik.app.get_app = get_app
